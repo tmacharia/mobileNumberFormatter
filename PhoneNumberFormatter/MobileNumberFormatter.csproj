@@ -7,13 +7,14 @@
     <Company>Neon Clouds</Company>
     <Product>Mobile Number Formatter</Product>
     <Description>This library works to help developers with the fear of using faulty mobile numbers from users in processing transactions and communications. Its currently built on .NET Standard and thus targets; Android, UWP, net framework and iOS. The library currently targets phone numbers in Kenya and is looking forward to scale out to other countries.</Description>
-    <PackageTags>mobile, phone number, kenya, phone number formatter</PackageTags>
+    <PackageTags>mobile, phone number, kenya, phone number formatter, safaricom, airtel, telkom, equitel</PackageTags>
     <Copyright>© Neon Clouds, 2017</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageIconUrl>https://devtimmystorage.blob.core.windows.net/files/PhoneNumberFormatter_Icon.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/devTimmy/phoneNumberFormatter.git</RepositoryUrl>
     <ApplicationIcon>assets\PhoneNumberFormatter_Icon.ico</ApplicationIcon>
+    <AssemblyName>MobileNumberFormatter</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

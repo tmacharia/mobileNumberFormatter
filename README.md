@@ -1,4 +1,4 @@
-# Phone Number Formatter
+# Mobile Number Formatter
 ===================
 This library works to help developers with the fear of using faulty mobile numbers from users in processing transactions and communications. Its currently built on .NET Standard and thus targets; Android, UWP, net framework and iOS. The library currently targets phone numbers in Kenya and is looking forward to scale out to other countries soon.
 
@@ -7,7 +7,7 @@ This library works to help developers with the fear of using faulty mobile numbe
 The easiest way to use this library in your project is via nuget. To install phoneNumberFormatter, run the following command in Package Manager Console
 
 ```
-PM> Install-Package phoneNumberFormatter
+PM> Install-Package MobileNumberFormatter
 ```
 
 OR
