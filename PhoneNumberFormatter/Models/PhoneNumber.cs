@@ -1,0 +1,96 @@
+﻿using MobileNumberFormatter.Services;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MobileNumberFormatter.Models
+{
+    /// <summary>
+    /// This class creates the structure a full mobile number 
+    /// with all the parts:
+    /// 
+    /// <list type="bullet">
+    /// <item>
+    /// <term>Country Code</term>
+    /// <description>The first part of a mobile number that
+    /// identifies the country of origin for that number. Every 
+    /// country in the world has a unique country code for all its 
+    /// mobile numbers. e.g +254...
+    /// </description>
+    /// </item>
+    /// <item>
+    /// <term>Prefix</term>
+    /// <description>The second part of a mobile number that
+    /// identifies the mobile network operator. e.g 0721..,0738..
+    /// </description>
+    /// </item>
+    /// <item>
+    /// <term>Suffix/Actual Number</term>
+    /// <description>The last part of a mobile number that normally
+    /// identifies a user to a mobile operator.
+    /// </description>
+    /// </item>
+    /// </list>
+    /// </summary>
+    public class PhoneNumber
+    {
+        /// <summary>
+        /// First part of a phone number that tells the country of origin
+        /// for that phone number
+        /// </summary>
+        public string CountryCode { get; set; }
+        /// <summary>
+        /// Second part of a phone number that identifies the mobile
+        /// network provider
+        /// </summary>
+        public int Prefix { get; set; }
+        /// <summary>
+        /// Last part of a phone number that is the actual number of a 
+        /// user after <c>CountryCode</c> and <c>Prefix</c>
+        /// </summary>
+        public int Suffix { get; set; }
+        /// <summary>
+        /// Identifies the mobile operator based on the phone number's 
+        /// prefix
+        /// </summary>
+        public MNO MobileOperator { get; set; }
+
+        /// <summary>
+        /// constructor to initialize <c>Phone Number</c> with a default
+        /// <c>CountryCode</c>
+        /// </summary>
+        public PhoneNumber()
+        {
+            CountryCode = "+254";
+        }
+        /// <summary>
+        /// constructor to initialize <c>PhoneNumber</c> based on a 
+        /// supplied mobile number
+        /// </summary>
+        /// <param name="mobile">Unformatted mobile number</param>
+        public PhoneNumber(string mobile)
+        {
+            IDictionary<PhoneNumberSection, string> tokens = PhoneNumberTokenizer.Tokenize(mobile);
+
+            CountryCode = tokens[PhoneNumberSection.CountryCode];
+            Prefix = int.Parse(tokens[PhoneNumberSection.OperatorCode]);
+            Suffix = int.Parse(tokens[PhoneNumberSection.RealNumber]);
+        }
+
+        /// <summary>
+        /// constructor to initialize <c>PhoneNumber</c> based on a 
+        /// supplied mobile number
+        /// </summary>
+        /// <param name="mobile">Unformatted mobile number</param>
+        public PhoneNumber Process(string mobile)
+        {
+            IDictionary<PhoneNumberSection, string> tokens = PhoneNumberTokenizer.Tokenize(mobile);
+
+            CountryCode = tokens[PhoneNumberSection.CountryCode];
+            Prefix = int.Parse(tokens[PhoneNumberSection.OperatorCode]);
+            Suffix = int.Parse(tokens[PhoneNumberSection.RealNumber]);
+
+            return this;
+        }
+    }
+}
