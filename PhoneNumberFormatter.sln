@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileNumberFormatter", "PhoneNumberFormatter\MobileNumberFormatter.csproj", "{1DEBC0A4-60E6-4195-8F73-CD3AC42321D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileNumberFormatter", "PhoneNumberFormatter\MobileNumberFormatter.csproj", "{1DEBC0A4-60E6-4195-8F73-CD3AC42321D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{9F18037E-29A9-4A65-81B3-9E707D4CA93C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCases", "TestProject\TestCases.csproj", "{9F18037E-29A9-4A65-81B3-9E707D4CA93C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "ConsoleApp1\TestConsoleApp.csproj", "{F8B3568C-151E-4C10-85D6-F4B1A01A5180}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsoleApp", "ConsoleApp1\TestConsoleApp.csproj", "{F8B3568C-151E-4C10-85D6-F4B1A01A5180}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

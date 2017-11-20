@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestProject
+namespace TestCases
 {
     [TestClass]
     public class PhoneNumberFormatterTests
