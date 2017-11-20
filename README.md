@@ -1,5 +1,5 @@
 # Mobile Number Formatter
-===================
+
 This library works to help developers with the fear of using faulty mobile numbers from users in processing transactions and communications. Its currently built on .NET Standard and thus targets; Android, UWP, net framework and iOS. The library currently targets phone numbers in Kenya and is looking forward to scale out to other countries soon.
 
 ### Usage
@@ -36,21 +36,21 @@ The interface provides 3 methods that you can use to process phone numbers with 
 * IsValid
 * GetProvider
 
-1. Format
+### 1. Format
 Breaks down a phone number from a string and builds a PhoneNumber object with all the separate sections of a phone number. Call this method using the following syntax
 
 ```cs
 PhoneNumber phoneNumber = _phoneNumberFormatter.Format("+254716 123 456");
 ```
 
-2. IsValid
+### 2. IsValid
 Checks if a phone number is valid or not. Call this method using the following syntax.
 
 ```cs
 bool result = _phoneNumberFormatter.IsValid("0716123456");
 ```
 
-3. GetProvider
+### 3. GetProvider
 Analyzes a phone number and gets the [Mobile Network Operator(MNO)](https://en.wikipedia.org/wiki/Telephone_numbers_in_Kenya)
 e.g Safaricom, Airtel, Telkom or Equitel. How to call this method
 
