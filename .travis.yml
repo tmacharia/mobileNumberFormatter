@@ -1,10 +1,15 @@
 language: csharp
 solution: PhoneNumberFormatter.sln
 
+sudo: required
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install libxml-checker-perl libdbd-pg-perl libperl-critic-perl libdevel-cover-perl
+
 matrix:
   include:
     - dotnet: 1.0.1
-      mono: none
       dist: trusty
       mono: latest
 
