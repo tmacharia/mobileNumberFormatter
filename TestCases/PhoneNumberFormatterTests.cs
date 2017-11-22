@@ -13,9 +13,12 @@ namespace TestCases
     [TestClass]
     public class PhoneNumberFormatterTests
     {
+        #region Local Variables
         private readonly IPhoneNumberFormatter _phoneNumberFormatter = new PhoneNumberFormatter();
         private string numberWithCountryCode = "+254716123456";
         private string number = "0716123456";
+        #endregion
+
 
         [TestMethod]
         public void CheckNumberValidity()
@@ -28,6 +31,8 @@ namespace TestCases
 
             Assert.IsTrue(secondResult);
         }
+
+
 
         [TestMethod]
         public void WrongNumberCheckValidity()
@@ -45,6 +50,8 @@ namespace TestCases
             Assert.IsFalse(secondResult);
         }
 
+
+
         [TestMethod]
         public void FormatWrongNumber()
         {
@@ -54,6 +61,8 @@ namespace TestCases
             Assert.IsNull(phone);
             Assert.IsNull(phone2);
         }
+
+
 
         [TestMethod]
         public void FormatNumber()
@@ -66,6 +75,8 @@ namespace TestCases
             Assert.AreEqual(phone2.CountryCode, "+254");
         }
 
+
+
         [TestMethod]
         public void CheckServiceProvider()
         {
@@ -76,7 +87,7 @@ namespace TestCases
 
             MNO airtel_result, telkom_result, equitel_test;
 
-            airtel_result = _phoneNumberFormatter.GetProvider("0738789654");
+            airtel_result = _phoneNumberFormatter.GetProvider("+254738789654");
             telkom_result = _phoneNumberFormatter.GetProvider("0771678123");
             equitel_test = _phoneNumberFormatter.GetProvider("0765890234");
 
