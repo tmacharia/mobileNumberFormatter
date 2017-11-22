@@ -1,6 +1,7 @@
 language: csharp
+mono: none
 solution: PhoneNumberFormatter.sln
-install:
-  - nuget restore PhoneNumberFormatter.sln
+
 script:
-  - msbuild /p:Configuration=Release PhoneNumberFormatter.sln
+  - dotnet restore
+  - dotnet build
