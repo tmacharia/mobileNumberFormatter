@@ -3,4 +3,4 @@ solution: PhoneNumberFormatter.sln
 install:
   - nuget restore PhoneNumberFormatter.sln
 script:
-  - xbuild /p:Configuration=Release PhoneNumberFormatter.sln
+  - msbuild /p:Configuration=Release PhoneNumberFormatter.sln
