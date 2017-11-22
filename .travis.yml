@@ -10,4 +10,4 @@ matrix:
 
 script:
   - dotnet restore
-  - dotnet build
+  - dotnet build PhoneNumberFormatter/
