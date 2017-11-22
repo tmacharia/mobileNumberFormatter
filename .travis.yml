@@ -3,7 +3,7 @@ solution: PhoneNumberFormatter.sln
 
 matrix:
   include:
-    - dotnet: 2.0.2
+    - dotnet: 1.0.1
       mono: none
       dist: trusty
       mono: latest
