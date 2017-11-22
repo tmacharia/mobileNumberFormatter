@@ -32,4 +32,8 @@
     <DocumentationFile>bin\Debug\netstandard2.0\docs.xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.2" />
+  </ItemGroup>
+
 </Project>
