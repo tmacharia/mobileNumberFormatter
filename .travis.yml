@@ -10,4 +10,5 @@ matrix:
 
 script:
   - dotnet restore
-  - dotnet build PhoneNumberFormatter/
+  - dotnet build PhoneNumberFormatter
+  - dotnet test TestCases
