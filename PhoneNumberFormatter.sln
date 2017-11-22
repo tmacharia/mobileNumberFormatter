@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileNumberFormatter", "Ph
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{DE1FBF39-8186-4D02-B24E-C81F315933F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCases", "TestCases\TestCases.csproj", "{DC15A838-094A-49DD-8F93-846CE58C65D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCases", "TestCases\TestCases.csproj", "{28893DC9-B668-43CC-A1E0-02B8D2389133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{DE1FBF39-8186-4D02-B24E-C81F315933F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE1FBF39-8186-4D02-B24E-C81F315933F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE1FBF39-8186-4D02-B24E-C81F315933F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC15A838-094A-49DD-8F93-846CE58C65D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC15A838-094A-49DD-8F93-846CE58C65D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC15A838-094A-49DD-8F93-846CE58C65D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC15A838-094A-49DD-8F93-846CE58C65D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28893DC9-B668-43CC-A1E0-02B8D2389133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28893DC9-B668-43CC-A1E0-02B8D2389133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28893DC9-B668-43CC-A1E0-02B8D2389133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28893DC9-B668-43CC-A1E0-02B8D2389133}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
