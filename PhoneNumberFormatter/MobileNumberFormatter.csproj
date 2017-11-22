@@ -2,11 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>Timothy Maina</Authors>
     <Company>Neon Clouds</Company>
     <Product>Mobile Number Formatter</Product>
-    <Description>This library works to help developers with the fear of using faulty mobile numbers from users in processing transactions and communications. Its currently built on .NET Standard and thus targets; Android, UWP, net framework and iOS. The library currently targets phone numbers in Kenya and is looking forward to scale out to other countries.</Description>
+    <Summary>
+      Analyze mobile phone numbers quickly to avoid using numbers in the wrong format
+      in transactions or communications. Supports phone numbers in Kenya only.
+    </Summary>
+    <Description>
+      This library works to help developers with the fear of using faulty
+      mobile numbers from users in processing transactions and communications. Its 
+      currently built on .NET Standard and thus targets; Android, UWP, net framework 
+      and iOS. The library currently targets phone numbers in Kenya and is looking 
+      forward to scale out to other countries.
+  </Description>
     <PackageTags>mobile, phone number, kenya, phone number formatter, safaricom, airtel, telkom, equitel</PackageTags>
     <Copyright>© Neon Clouds, 2017</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>

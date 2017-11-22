@@ -1,9 +1,13 @@
 ﻿using MobileNumberFormatter;
-using MobileNumberFormatter.Interfaces;
 using MobileNumberFormatter.Models;
+using MobileNumberFormatter.Interfaces;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace TestConsoleApp
+namespace TestConsole
 {
     class Program
     {
@@ -32,7 +36,7 @@ namespace TestConsoleApp
         //test validity
         private static void TestValidity(string number)
         {
-            Console.WriteLine("Testing {0} for validity",number);
+            Console.WriteLine("Testing {0} for validity", number);
 
             bool result = phoneNumberFormatter.IsValid(number);
 
@@ -61,5 +65,6 @@ namespace TestConsoleApp
                    result.MobileOperator,
                    result.Suffix);
         }
+
     }
 }
