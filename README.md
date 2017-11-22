@@ -1,7 +1,7 @@
 # Mobile Number Formatter
 
-[![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)]()
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![Build Status](https://travis-ci.org/devTimmy/mobileNumberFormatter.svg?branch=master)](https://travis-ci.org/devTimmy/mobileNumberFormatter)
+[![GitHub license](https://img.shields.io/github/license/devTimmy/mobileNumberFormatter.svg)](https://github.com/devTimmy/mobileNumberFormatter/blob/master/LICENSE)
 [![build/tests](https://img.shields.io/badge/tests-5%20passing-brightgreen.svg)]()
 
 This library works to help developers with the fear of using faulty mobile numbers from users in processing transactions and communications. Its currently built on .NET Standard and thus targets; Android, UWP, net framework and iOS. The library currently targets phone numbers in Kenya and is looking forward to scale out to other countries soon.
