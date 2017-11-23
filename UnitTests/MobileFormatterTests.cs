@@ -77,8 +77,8 @@ namespace TestCases
 
 
 
-        [Test, TestCaseSource(typeof(DataClass),"TestCases")]
-        public void VerifyMobileOperator(string saf,string airtel,string telkom,string equitel)
+        [Test, TestCaseSource(typeof(DataClass), "TestCases")]
+        public void VerifyMobileOperator(string saf, string airtel, string telkom, string equitel)
         {
             MNO safaricom_result, airtel_result, telkom_result, equitel_test;
 
@@ -102,13 +102,13 @@ namespace TestCases
             {
                 //numbers starting with "+254.."
                 yield return new TestCaseData("+254716123456", "+254738123456", "+254775123456", "+254765123456");
-                
+
                 //numbers starting with "..254.." only
                 yield return new TestCaseData("254716123456", "254738123456", "254775123456", "254765123456");
-                
+
                 //numbers starting with "..7.." with no "0"
                 yield return new TestCaseData("716123456", "738123456", "775123456", "765123456");
-                
+
                 //numbers starting with "07.."
                 yield return new TestCaseData("0716123456", "0738123456", "0775123456", "0765123456");
             }

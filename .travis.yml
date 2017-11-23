@@ -7,4 +7,3 @@ mono: latest
 script:
   - dotnet restore
   - dotnet build PhoneNumberFormatter
-  - dotnet test TestCases
